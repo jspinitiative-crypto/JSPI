@@ -1,0 +1,11 @@
+# Local tooling and review outputs
+node_modules/
+.playwright/
+__pycache__/
+.node_repl*
+.DS_Store
+Thumbs.db
+
+# Owner-provided planning references retained locally
+/SurgPath_Jordan_Initiative_Plan.pdf
+/Logo concepts scalpel & suture@2x.png
