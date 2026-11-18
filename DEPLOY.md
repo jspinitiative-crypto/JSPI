@@ -19,13 +19,20 @@ Cloudflare Pages, direct upload via Wrangler. GitHub is only a backup copy; Clou
 
 ## Every later update
 
+The live project is **jspi** (jspi.pages.dev) in the Cloudflare account that owns the jspi.site zone. `jspi.site` is a custom domain on that project; `www.jspi.site` is redirected to it by the Redirect Rule "www to root" (301, query string kept).
+
+Option A, dashboard (works from any browser signed in to the JSPI account):
+
 ```
-$env:CLOUDFLARE_API_TOKEN = "<token>"
-npm run deploy
+npm run build
+```
+Then Workers & Pages > jspi > Deployments > Create deployment > Production > drag in the `dist` folder > Save and deploy.
+
+Option B, Wrangler: only after `npx wrangler pages project list` shows **jspi.pages.dev** (not another account's project), run `npm run deploy`.
+
+```
 git add -A; git commit -m "Update site"; git push   # backup only
 ```
-
-`npm run deploy` runs the static checker, builds `dist/` (public files only), and uploads it.
 
 ## Files
 
