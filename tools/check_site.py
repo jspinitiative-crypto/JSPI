@@ -8,7 +8,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES = ['index.html', 'about.html', 'surgical-day.html', 'pathway.html', 'opportunities.html', 'partners.html', 'contact.html']
+PAGES = ['index.html', 'pathway.html', 'activities.html', 'faculty.html', 'partners.html', 'impact.html', 'contact.html']
 
 class Page(HTMLParser):
     def __init__(self, text):

@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   document.documentElement.classList.remove('no-js');
-  const email = 'jsp.initiative@gmail.com';
+  const email = 'contact@jspi.site';
   const header = document.querySelector('.site-header');
   const toggle = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('.site-nav');
@@ -83,6 +83,25 @@
     activateHash();
     window.addEventListener('hashchange', activateHash);
   });
+
+  // Activity filter by pathway stage. Without JS every activity stays visible.
+  const filterBar = document.querySelector('[data-filter-bar]');
+  if (filterBar) {
+    const buttons = [...filterBar.querySelectorAll('[data-filter]')];
+    const cards = [...document.querySelectorAll('[data-stages]')];
+    const filterStatus = document.querySelector('[data-filter-status]');
+    const applyFilter = key => {
+      buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === key)));
+      let shown = 0;
+      cards.forEach(card => {
+        const match = key === 'all' || card.dataset.stages.split(' ').includes(key);
+        card.hidden = !match;
+        if (match) shown += 1;
+      });
+      if (filterStatus) filterStatus.textContent = shown + ' activities shown.';
+    };
+    buttons.forEach(button => button.addEventListener('click', () => applyFilter(button.dataset.filter)));
+  }
 
   // Avoid hiding content if observer support is unavailable or motion is reduced.
   if ('IntersectionObserver' in window && !reducedMotion.matches) {

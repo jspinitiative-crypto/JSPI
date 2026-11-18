@@ -1,0 +1,16 @@
+{
+  "name": "jspi-site",
+  "private": true,
+  "description": "Deployment tooling for the static JSPI website (no runtime dependencies).",
+  "scripts": {
+    "check": "python tools/check_site.py",
+    "build": "python tools/build_dist.py",
+    "login": "wrangler login",
+    "setup": "node tools/cloudflare-setup.mjs",
+    "status": "node tools/cloudflare-setup.mjs --check",
+    "deploy": "python tools/check_site.py && python tools/build_dist.py && wrangler pages deploy dist --project-name jspi --branch main"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

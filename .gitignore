@@ -9,3 +9,14 @@ Thumbs.db
 # Owner-provided planning references retained locally
 /SurgPath_Jordan_Initiative_Plan.pdf
 /Logo concepts scalpel & suture@2x.png
+
+# Deployment output
+dist/
+.wrangler/
+.env
+.dev.vars
+
+# Confidential proposal documents (never publish)
+/JSPI_Financial_Model_Proposal.*
+/Proposal.pdf
+/JSPI_Proposal.docx

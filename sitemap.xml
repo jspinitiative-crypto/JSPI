@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://jspinitiative-crypto.github.io/JSPI/</loc></url>
-  <url><loc>https://jspinitiative-crypto.github.io/JSPI/about.html</loc></url>
-  <url><loc>https://jspinitiative-crypto.github.io/JSPI/surgical-day.html</loc></url>
-  <url><loc>https://jspinitiative-crypto.github.io/JSPI/pathway.html</loc></url>
-  <url><loc>https://jspinitiative-crypto.github.io/JSPI/opportunities.html</loc></url>
-  <url><loc>https://jspinitiative-crypto.github.io/JSPI/partners.html</loc></url>
-  <url><loc>https://jspinitiative-crypto.github.io/JSPI/contact.html</loc></url>
+  <url><loc>https://jspi.site/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://jspi.site/pathway</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://jspi.site/activities</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://jspi.site/faculty</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://jspi.site/partners</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://jspi.site/impact</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://jspi.site/contact</loc><lastmod>2026-11-18</lastmod></url>
 </urlset>

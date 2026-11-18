@@ -54,7 +54,7 @@ The accessibility pass found and resolved contrast on pathway stage numbers and 
 
 ## Static-site limits and launch details
 
-Contact is implemented through jsp.initiative@gmail.com. The composer prepares a draft in the visitor's email app and does not submit or save data. There is no backend, sign-in, registration processing, payment collection, automatic mailing list, or member Passport dashboard.
+Contact is implemented through contact@jspi.site (Zoho Mail). The composer prepares a draft in the visitor's email app and does not submit or save data. There is no backend, sign-in, registration processing, payment collection, automatic mailing list, or member Passport dashboard.
 
 Absolute canonical and Open Graph URLs, robots.txt, and a seven-page sitemap are configured for https://jspinitiative-crypto.github.io/JSPI/. The provided configuration helper supports future domain changes without introducing a runtime or build dependency. The README explains local serving, maintenance, and GitHub Pages publication.
 
