@@ -93,6 +93,16 @@ npm run deploy
 
 `npm run deploy` checks the site, builds `dist/` and uploads it to Cloudflare Pages. See DEPLOY.md for details.
 
+## 10. Profile photo and signature (JSPI logo)
+
+Files: `email-assets/JSPI_email_photo.png` (1024×1024, safe for circle crops) and `email-assets/JSPI_signature_logo.png`.
+
+1. **Zoho profile photo:** at mail.zoho.com, click your avatar (top right) → **My Account** → hover over the photo → **Upload** → choose `JSPI_email_photo.png` → set **Photo visibility** to **Everyone**. Zoho users and the Zoho app now show the logo.
+2. **Gmail recipients:** Gmail shows a sender photo only from that address's Google account. Go to accounts.google.com/signup → *Use my current email address instead* → enter `contact@jspi.site` → confirm with the code Zoho receives → set the profile photo to `JSPI_email_photo.png`. No Gmail inbox is created; this account only carries the photo.
+3. **Outlook, Apple Mail and others:** create a free Gravatar at gravatar.com with `contact@jspi.site` and upload the same photo.
+4. **Signature:** mail.zoho.com → ⚙ **Settings** → **Signature** → **Add new**. Insert `JSPI_signature_logo.png` with the image button, set its width to about 140 px, and add your name, role, `jspi.site` and `contact@jspi.site` under it. Set it as the default for `contact@jspi.site`.
+5. **Later, verified logo (BIMI):** brand logos in Gmail and Apple Mail without a Google account need DMARC at `p=quarantine` or `p=reject` plus a paid VMC/CMC certificate. Revisit this after the brand is registered.
+
 ## Troubleshooting
 
 - **Zoho says MX is not found:** wait 15 minutes. Check that the MX records are on `@` and that Email Routing is off.
